@@ -143,6 +143,9 @@ nav{
   border-radius:var(--radius);
   padding:36px 30px;
   transition:transform .25s,box-shadow .25s,border-color .25s;
+  display:flex;
+  flex-direction:column;
+  height:100%;
 }
 .cap-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:rgba(108,34,189,.3)}
 .cap-icon{
@@ -151,8 +154,8 @@ nav{
   display:flex;align-items:center;justify-content:center;
   font-size:22px;margin-bottom:20px;
 }
-.cap-card h3{font-size:17px;font-weight:700;color:var(--dark);margin-bottom:10px}
-.cap-card p{font-size:14px;color:var(--muted);line-height:1.7}
+.cap-card h3{font-size:17px;font-weight:700;color:var(--dark);margin-bottom:10px;min-height:2.6em}
+.cap-card p{font-size:14px;color:var(--muted);line-height:1.7;flex:1}
 
 /* â”€â”€ Product â”€â”€ */
 .product-section{background:var(--bg)}
@@ -231,13 +234,16 @@ nav{
 .late{background:#fef2f2;color:#dc2626}
 
 /* â”€â”€ About â”€â”€ */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:stretch}
 .about-visual{
   background:#ffffff;
   border:1px solid #e5dcff;
   border-radius:20px;padding:48px 40px;
   text-align:center;
   box-shadow:0 16px 48px rgba(108,34,189,.10);
+  display:flex;
+  flex-direction:column;
+  height:100%;
 }
 .about-visual img{height:auto;width:100%;max-width:260px;margin:0 auto 28px;display:block;}
 .about-visual h3{font-size:22px;font-weight:800;margin-bottom:8px;color:#3a1078}
@@ -251,7 +257,19 @@ nav{
   font-size:13px;font-weight:600;
 }
 .about-content .section-title{margin-bottom:20px}
-.about-para{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:16px}
+.about-content{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+.about-para{
+  font-size:15px;
+  color:var(--muted);
+  line-height:1.8;
+  margin-bottom:16px;
+  text-wrap:pretty;
+  overflow-wrap:anywhere;
+}
 .value-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
 .vpill{
   background:var(--teal-light);color:var(--teal);

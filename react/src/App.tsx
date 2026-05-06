@@ -256,7 +256,15 @@ function App() {
               <h3>Full-Stack Excellence</h3>
               <p>
                 High-performance React and Next.js frontends paired with secure, enterprise-grade
-                Java and Spring Boot backends — tested end-to-end.
+                backend services in Java/Spring Boot, Node.js, Python, and more — tested end-to-end.
+              </p>
+            </div>
+            <div className="cap-card reveal" style={{ transitionDelay: '.3s' }}>
+              <div className="cap-icon">📊</div>
+              <h3>Big Data &amp; Data Pipelines</h3>
+              <p>
+                Building reliable data pipelines using big data, Airflow, PySpark, and Terraform —
+                Infrastructure as Code across AWS, GCP, and Azure.
               </p>
             </div>
           </div>
@@ -290,9 +298,9 @@ function App() {
                 real-world business problems.
               </p>
               <p className="about-para">
-                Based in India and serving a global market, our mission is to provide the most
-                sophisticated digital tech stack — enabling businesses to automate the present and
-                confidently engineer their future.
+                Serving teams across industries, our mission is to deliver a modern, production-ready
+                digital stack — enabling businesses to automate today’s workflows and confidently
+                engineer what’s next.
               </p>
               <p className="about-para">
                 We don&apos;t just consult. We design, build, and ship production-grade software with
