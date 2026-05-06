@@ -419,6 +419,7 @@ function App() {
         </div>
       </footer>
 
+      {/* Social sidebar — Facebook, Instagram, LinkedIn (re-enable when links are ready)
       <div className="social-sidebar">
         <a href="" rel="noopener noreferrer" aria-label="Facebook" className="social-btn">
           <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
@@ -442,6 +443,7 @@ function App() {
           </svg>
         </a>
       </div>
+      */}
     </>
   )
 }
