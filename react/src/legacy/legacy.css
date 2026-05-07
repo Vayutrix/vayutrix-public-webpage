@@ -178,6 +178,74 @@ nav{
 .product-card.alt{
   background:linear-gradient(135deg,rgba(26,95,173,.06),rgba(108,34,189,.06));
 }
+
+/* Product rotator — one card at a time, ~80vw centered */
+.product-rotator{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:18px;
+  width:100%;
+}
+.product-rotator-controls{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.product-rotator-btn{
+  min-width:44px;
+  padding:10px 18px!important;
+  font-size:20px!important;
+  line-height:1!important;
+}
+.product-rotator-counter{
+  font-size:13px;
+  font-weight:600;
+  color:var(--muted);
+  min-width:3.25rem;
+  text-align:center;
+}
+.product-rotator-frame{
+  width:80vw;
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+  box-sizing:border-box;
+}
+.product-rotator-slide{
+  animation:productRotatorFade .35s ease;
+}
+@keyframes productRotatorFade{
+  from{opacity:.55}
+  to{opacity:1}
+}
+.product-rotator-dots{
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.product-rotator-dot{
+  width:10px;
+  height:10px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:#fff;
+  cursor:pointer;
+  padding:0;
+  transition:background .2s,border-color .2s;
+}
+.product-rotator-dot:hover{
+  border-color:rgba(108,34,189,.35);
+}
+.product-rotator-dot.active{
+  background:var(--teal);
+  border-color:var(--teal);
+}
+
 .product-card .product-grid{
   gap:0;
 }

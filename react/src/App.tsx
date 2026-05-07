@@ -9,7 +9,7 @@ function App() {
     () => [
       { href: '#home', label: 'Home' },
       { href: '#capabilities', label: 'Services' },
-      { href: '#product', label: 'Product' },
+      { href: '#product', label: 'Products' },
       { href: '#about', label: 'About' },
     ],
     [],
@@ -214,7 +214,7 @@ function App() {
         </p>
         <div className="hero-actions">
           <a href="#product" className="btn btn-primary">
-            Explore Our Product
+            Explore Products
           </a>
           <a href="#about" className="btn btn-outline">
             About Us
