@@ -63,3 +63,17 @@ npm install -g wrangler
 ```
 wrangler pages deploy . --project-name=pages-vayutrix
 ```
+
+## Production deployment (Cloudflare Pages)
+
+The production deploy script is intentionally **protected** to prevent accidental runs.
+
+From the `react/` folder, run:
+
+```powershell
+$env:VAYUTRIX_ALLOW_PROD_DEPLOY="I_UNDERSTAND_THIS_WILL_DEPLOY_TO_PRODUCTION"
+$env:VAYUTRIX_DEPLOY_TARGET="pages-vayutrix"
+npm run deploy:pages:production
+```
+
+If those environment variables are not set exactly, the deploy will stop immediately.
